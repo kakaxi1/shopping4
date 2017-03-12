@@ -63,7 +63,8 @@ img {
     border: solid 1px red; }
     .t-header-middle .search input {
       border: none;
-      float: left; }
+      float: left;
+      outline: none; }
     .t-header-middle .search .inp1 {
       width: 504px;
       height: 35px;
