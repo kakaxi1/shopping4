@@ -21,30 +21,30 @@ input {
 a {
   text-decoration: none; }
 
-#t-header {
+#header {
   width: 100%;
   height: 99px;
   border-bottom: 1px solid gray;
   position: relative; }
-  #t-header .header-l {
+  #header .header-l {
     position: absolute;
     float: left;
     left: 33px;
     top: 35px; }
-  #t-header .header-m {
+  #header .header-m {
     position: absolute;
     float: left;
     width: 432px;
     left: 216px;
     top: 30px; }
-    #t-header .header-m input {
+    #header .header-m input {
       height: 37px;
       border: solid 1px red; }
-    #t-header .header-m #txt {
+    #header .header-m #txt {
       width: 354px;
       float: left;
       text-indent: 30px; }
-    #t-header .header-m #btn {
+    #header .header-m #btn {
       width: 75px;
       float: left;
       background: #dc2828;
@@ -52,26 +52,26 @@ a {
       color: #fff;
       font-size: 16px;
       border: none; }
-  #t-header .header-r {
+  #header .header-r {
     position: absolute;
     float: right;
     top: 30px;
     right: 227px; }
-    #t-header .header-r li {
+    #header .header-r li {
       display: block;
       text-align: center;
       float: left;
       height: 37px;
       padding: 0 20px; }
-    #t-header .header-r .li01 {
+    #header .header-r .li01 {
       display: block;
       line-height: 37px;
       border-left: solid 1px darkgray;
       border-right: solid 1px darkgray; }
-    #t-header .header-r .li02 {
+    #header .header-r .li02 {
       float: left;
       line-height: 37px; }
-      #t-header .header-r .li02 a {
+      #header .header-r .li02 a {
         color: red; }
 
 #t-body {

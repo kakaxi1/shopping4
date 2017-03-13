@@ -1,0 +1,314 @@
+i {
+  font-style: normal; }
+
+body {
+  background: #eeeeee; }
+
+#bodys {
+  width: 100%;
+  height: 100%;
+  background: #eeeeee; }
+  #bodys .introduce {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 615px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    border-top: solid 2px red; }
+    #bodys .introduce .introduce-l {
+      width: 94px;
+      height: 552px;
+      border: solid 1px silver;
+      position: absolute;
+      top: 20px; }
+      #bodys .introduce .introduce-l #option li {
+        width: 94px;
+        height: 94px;
+        background: red;
+        border-top: solid 1px #ccc; }
+        #bodys .introduce .introduce-l #option li img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          border-bottom: solid 1px #ccc; }
+      #bodys .introduce .introduce-l #option .active {
+        display: block; }
+    #bodys .introduce .introduce-m {
+      box-sizing: border-box;
+      width: 551px;
+      height: 554px;
+      border: solid 1px silver;
+      position: absolute;
+      top: 20px;
+      left: 96px;
+      border-left: none; }
+      #bodys .introduce .introduce-m #list li {
+        width: 551px;
+        height: 554px;
+        position: absolute;
+        top: 0;
+        display: none; }
+        #bodys .introduce .introduce-m #list li img {
+          width: 90%;
+          height: 90%; }
+      #bodys .introduce .introduce-m #list .active {
+        display: block; }
+    #bodys .introduce .introduce-r {
+      width: 473px;
+      height: 552px;
+      position: absolute;
+      top: 20px;
+      left: 672px; }
+      #bodys .introduce .introduce-r .l-t {
+        height: 66px;
+        border-bottom: dashed 1px silver;
+        margin-top: 10px; }
+        #bodys .introduce .introduce-r .l-t span {
+          line-height: 30px;
+          color: red; }
+      #bodys .introduce .introduce-r .l-m {
+        height: 92px;
+        margin-top: 7px;
+        border-bottom: dashed 1px silver; }
+        #bodys .introduce .introduce-r .l-m .l-m-l {
+          font-size: 12px;
+          line-height: 40px; }
+        #bodys .introduce .introduce-r .l-m .money {
+          font-size: 20px;
+          color: red; }
+        #bodys .introduce .introduce-r .l-m .l-m-r {
+          color: red; }
+      #bodys .introduce .introduce-r .l-b {
+        height: 77px;
+        border-bottom: dashed 1px silver; }
+        #bodys .introduce .introduce-r .l-b .l-m-l {
+          line-height: 77px; }
+        #bodys .introduce .introduce-r .l-b .jj {
+          width: 118px;
+          height: 30px;
+          border: solid 1px #ccc;
+          margin-top: -50px;
+          margin-left: 60px; }
+          #bodys .introduce .introduce-r .l-b .jj input {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: #fff;
+            font-size: 20px; }
+          #bodys .introduce .introduce-r .l-b .jj #num {
+            width: 50px; }
+      #bodys .introduce .introduce-r .buy {
+        height: 86px;
+        margin-top: 20px; }
+        #bodys .introduce .introduce-r .buy i {
+          display: block;
+          width: 161px;
+          height: 48px;
+          color: #fff;
+          text-align: center;
+          line-height: 48px;
+          font-size: 16px;
+          float: left; }
+        #bodys .introduce .introduce-r .buy .add-car {
+          background: url(../img/icon.png) -21px -257px no-repeat;
+          margin-left: 15px;
+          box-shadow: 0 2px 5px green; }
+        #bodys .introduce .introduce-r .buy .at-once {
+          background: url(../img/icon.png) -217px -257px no-repeat;
+          margin-left: 20px;
+          box-shadow: 0 2px 5px red; }
+      #bodys .introduce .introduce-r .share {
+        width: 473px;
+        height: 100px;
+        margin-top: -24px; }
+        #bodys .introduce .introduce-r .share .shares {
+          margin-left: 35px;
+          float: left; }
+        #bodys .introduce .introduce-r .share i {
+          width: 17px;
+          height: 17px;
+          display: block;
+          float: left;
+          margin-left: 15px; }
+        #bodys .introduce .introduce-r .share .wb {
+          background: url(../img/jiathis_ico.png) 0px -96px no-repeat; }
+        #bodys .introduce .introduce-r .share .wx {
+          background: url(../img/jiathis_ico.png) 0px -1808px no-repeat; }
+        #bodys .introduce .introduce-r .share .kj {
+          background: url(../img/jiathis_ico.png) 0px -63px no-repeat; }
+        #bodys .introduce .introduce-r .share .collect {
+          margin-left: 90px; }
+        #bodys .introduce .introduce-r .share .sc {
+          background: url(../img/jiathis_ico.png) 0px -17px no-repeat;
+          display: block;
+          width: 17px;
+          height: 17px;
+          margin-top: -17px;
+          margin-left: 280px; }
+
+#matter {
+  width: 100%;
+  height: 4146px;
+  background: #eeeeee;
+  z-index: 99999;
+  position: absolute; }
+  #matter .mat {
+    width: 1200px;
+    height: 1472px;
+    background: #eeeeee;
+    margin: 0 auto; }
+    #matter .mat .matter-l {
+      position: absolute;
+      left: 32px; }
+      #matter .mat .matter-l img {
+        margin: 10px 0; }
+    #matter .mat .matter-r {
+      width: 990px;
+      height: 1472px;
+      position: absolute;
+      left: 240px;
+      top: 10px; }
+      #matter .mat .matter-r .t {
+        box-sizing: border-box;
+        width: 990px;
+        height: 64px;
+        line-height: 64px;
+        font-size: 16px;
+        padding-left: 60px;
+        border: solid 1px #ccc;
+        background: #fff; }
+
+#buttom {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  background: #eeeeee;
+  top: 4960px; }
+  #buttom .butt {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1200px;
+    height: 322px;
+    left: 32px;
+    top: 30px;
+    background: #fff; }
+    #buttom .butt .like h2 {
+      float: left;
+      margin-top: 24px;
+      margin-left: 32px; }
+    #buttom .butt .like a {
+      display: block;
+      float: right;
+      margin-top: 26px;
+      margin-right: 32px;
+      font-size: 12px;
+      color: #1a9eff; }
+    #buttom .butt .list {
+      width: 100%;
+      height: 270px; }
+      #buttom .butt .list .list01 {
+        position: absolute;
+        margin-top: 52px;
+        margin-left: 32;
+        float: left;
+        left: 32px; }
+        #buttom .butt .list .list01:nth-child(2) {
+          left: 230px; }
+        #buttom .butt .list .list01:nth-child(3) {
+          left: 426px; }
+        #buttom .butt .list .list01:nth-child(4) {
+          left: 622px; }
+        #buttom .butt .list .list01:nth-child(5) {
+          left: 815px; }
+        #buttom .butt .list .list01:nth-child(6) {
+          left: 1011px; }
+        #buttom .butt .list .list01 a {
+          display: block;
+          width: 162px;
+          height: 162px;
+          border: solid 1px silver; }
+          #buttom .butt .list .list01 a img {
+            text-align: center;
+            line-height: 162px;
+            width: 162px;
+            height: 162px; }
+        #buttom .butt .list .list01 .list-name {
+          display: block;
+          width: 162px;
+          text-align: center;
+          margin-top: 13px;
+          line-height: 20px;
+          font-size: 14px;
+          word-break: break-all; }
+        #buttom .butt .list .list01 .list-price {
+          box-sizing: border-box;
+          display: block;
+          width: 162px;
+          height: 16px;
+          top: 230px;
+          position: absolute;
+          color: red;
+          text-align: center;
+          font-size: 15px; }
+
+#t-footer {
+  width: 100%;
+  height: 281px;
+  background: #fff;
+  position: absolute;
+  top: 5360px; }
+  #t-footer .ind_1200 {
+    width: 1200px;
+    margin: 0 auto; }
+    #t-footer .ind_1200 .footer_icon {
+      height: 112px;
+      border-bottom: solid 1px silver;
+      padding-top: 40px; }
+      #t-footer .ind_1200 .footer_icon .footer_icon_l {
+        position: relative;
+        margin-left: 90px;
+        float: left; }
+        #t-footer .ind_1200 .footer_icon .footer_icon_l i {
+          position: absolute;
+          background: url(../img/icon.png) -2px -131px no-repeat;
+          width: 72px;
+          height: 72px; }
+        #t-footer .ind_1200 .footer_icon .footer_icon_l .icon_2 {
+          background-position: -86px -131px; }
+        #t-footer .ind_1200 .footer_icon .footer_icon_l .icon_3 {
+          background-position: -170px -131px; }
+        #t-footer .ind_1200 .footer_icon .footer_icon_l .icon_4 {
+          background-position: -253px -131px; }
+        #t-footer .ind_1200 .footer_icon .footer_icon_l .txt_t {
+          padding-left: 85px;
+          color: #ff3c3c;
+          padding-top: 8px; }
+          #t-footer .ind_1200 .footer_icon .footer_icon_l .txt_t p {
+            font-size: 16px;
+            padding-top: 5px; }
+          #t-footer .ind_1200 .footer_icon .footer_icon_l .txt_t .boldp {
+            font-size: 20px; }
+    #t-footer .ind_1200 .footer_d {
+      padding-bottom: 28px; }
+      #t-footer .ind_1200 .footer_d div {
+        text-align: center;
+        margin-top: 45px; }
+        #t-footer .ind_1200 .footer_d div a {
+          font-size: 14px;
+          color: #747474;
+          padding: 0 18px;
+          border-left: 1px solid #747474;
+          outline: 0; }
+          #t-footer .ind_1200 .footer_d div a:first-child {
+            border: none; }
+      #t-footer .ind_1200 .footer_d p {
+        color: grey;
+        margin-top: 15px;
+        font-size: 14px;
+        text-align: center; }
+
+/*# sourceMappingURL=good.css.map */
