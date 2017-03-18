@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8">
-		<title>购物车-买买商城</title>
-		<link rel="stylesheet" href="css/shopCar.css" />
-		<link rel="stylesheet" href="css/demo01.css" />
+		<title>兰蔻</title>
 	</head>
-	<style>
-    
-</style>
 	<body>
-		
-		
-		<div id="logo">
+
+		<link rel="stylesheet" type="text/css" href="css/strategy.css"/>
+		<link rel="stylesheet" href="css/demo01.css" />
+		<link rel="stylesheet" type="text/css" href="css/good.css"/>
+		<link rel="stylesheet" href="css/list.css" />
+        <div id="logo">
 			<div class="ind_1200">
 			<ul class="list">
 				<li><a href="login.html">买买电商欢迎您,请登录</a></li>
@@ -21,7 +19,7 @@
 				<li><a href="#">我的收藏</a></li>
 				<li><a href="#">会员中心</a></li>
 				<li><a href="#">商家入驻</a></li>
-				<li><a href="#">买买攻略</a></li>
+				<li><a href="strategy.html">买买攻略</a></li>
 			</ul>
 			</div>
 		</div>
@@ -49,7 +47,7 @@
 			</div>
 			<div class="t-header-right">
 				<img class="cart1" src="img/index_cart1.png" />
-				<a href="#"><img src="img/index_cart.jpg" /></a>
+				<a href="shopCar.html"><img src="img/index_cart.jpg" /></a>
 			</div>
 			</div>
 		</div>
@@ -744,82 +742,63 @@
 	        </div>
 		</div>
 <!----------------------------------nav结束----------------------------->
-	    <div class="ui-body"style="background: #eee;height:800px;">
-		    <div class="ui-container">
-		        <div class="ui-cart-t"> 商品信息</div>
-		        <div style="padding: 0 10px;background-color: white;position: relative;margin-bottom: 10px;display: block;">
-		          <div style="height: 40px;text-align: center;color: #ff3c3c;display: table-cell;vertical-align: middle;text-indent: 20px;font-weight: bold;">
-		            <span>春节停发货通知：2017.1.17-2017.2.3停止发货，2月4日开始发货。</span>
-		            <em  onclick="this.parentNode.parentNode.style.display= 'none'" style="cursor:pointer;width: 20px;height: 20px;position: absolute;top: 50%;right: 50px;-webkit-transform: translateY(-50%);transform: translateY(-50%);background: url(img//close.png) no-repeat;"></em>
-		          </div>
-		        </div>
-		        <ul class="ui-goods-list-t" style="display: block;">
-		            <li style="width: 130px;text-align: right;"><em class="ui-choose-all"></em>全选</li>
-		            <li style="width: 390px;">商品信息</li>
-		            <li>单价</li>
-		            <li>数量</li>
-		            <li>小计</li>
-		            <li>操作</li>
-		        </ul>
-		        <div class="dian" style="width: 1200px;height: 200px;margin: 10px auto;border-top: solid 2px #eeeeee;border-bottom: solid 2px #eeeeee;">
-		            <!--<div class="goods" style="width: 1200px;height: 62px;border-bottom:solid 4px #eeeeee;font-size: 16px;line-height: 62px;padding-left: 80px;">诚志创业美妆店</div>	
-			        <ul>
-		        		<li style="float: left;margin-left:80px;margin-top: -20px;"><a href="#"><img style="width: 80px;height: 80px;border: solid 1px silver;" src="img/01.jpg"/></a></li>
-		        		<li style="width: 367px;display: block;border: solid 1px cadetblue;margin-left: 180px;margin-top: 50px;"><a href="#">兰蔻清滢柔肤水(粉色)200ml 专柜</a></li>
-		        		<li style="float: left;margin-left: 430px;margin-top: -20px;">￥373</li>
-		        		<li style="float: left;">
-		        			<div style="width: 110px;height: 32px;border: solid 1px silver;margin-left: 570px;margin-top:-30px;">
-	    					<input type="button" value="-" style="border:none;width: 35px;height: 32px;float: left;"/>
-							<input type="text" value="1"  style="text-align:center;border:none;width: 40px;height: 32px;float: left;"/>
-							<input type="button" value="+"  style="border:none;width: 35px;height: 32px;float: left;"/>
-        				</div></li>
-		        	    <li style="float: left;display: block;margin-left: 770px;margin-top: -20px;">￥373</li>
-			        </ul>
-		        	<a href="#"><span style="float: right;display: block;margin-right: 70px;margin-top: -35px;color: #000;">删除</span></a><a href="#"><span style="color: #000;float: right;display: block;margin-right: 70px;margin-top: -13px">收藏</span></a>-->
-		        </div>
-		        </div>
-            </div>  
-		        <div class="ui-cart-footer"  style="display: block;position: fixed;bottom: 0;width:1200px">
-		            <div><em class="ui-choose-all"></em>全选<span class="ui-del-choosed">删除选择商品</span></div>
-		            <div class="ui-cart-jiesuan">
-		                <div>已选:<em class="ui-total-num">82</em>件商品</div>
-		                <div>总计:<em class="ui-total-price">￥82</em></div>
-		                <div class="ui-go-pay">去结算</div>
-		                
-		            </div>
-		        </div>
-		        
-		        <!--<div class="ui-nothing-find" style="display: block;">
-		            <div>
-		                <dl>
-		                    <dt>主人，您的购物车是空，空空如也，也...！</dt>
-		                    <dd><a href="shopping.html"><img src="img/cart_b.png"/></a></dd>
-		                    
-		                </dl>
-		            </div>
-		                
-		        </div>
-		    </div>
-        </div>-->
-	   <!--<div class="ui-tan">
-	    <div class="ui-tan-b" id="ui-tan-b" style="margin-top: -91px;">
-	        <div class="ui-tan-t">删除选中商品<em class="ui-close"></em></div>
-	        <div class="ui-tan-ts">
-	            <div>主人，您确定删除选中的商品吗？</div>
-	            <div class="ui-tan-op">
-	                <button class="ui-yes">确认</button>
-	                <button class="ui-no">取消</button>
-	            </div>
-	        </div>
-	    </div>
-	    <div class="ui-tan-bc"></div>
-	</div> -->
-	    
-	    
-	 
-	    
-<!----------------------------------t-body结束------------------------->
-	    <div id="t-footer">
+       
+       <div id="sousuo">搜索结果>&nbsp;&nbsp;&nbsp;&nbsp;查询到218款商品</div>
+       <div id="tp">
+	       <!--   <div class="dress">
+	        	<img class="q01" src="http://image.maimaicn.com/img/20170314/2926104383758212_C" />
+	        	<form>
+	        		<dl class="tb">
+	        			<dt>偶龙春装复古气质名媛七分袖修身显瘦印花连衣裙A040 S</dt>
+	        			<dd><h2>￥209.9</h2><span>红包抵用19.31元</span></dd>
+	        		</dl>
+	        		<a href="#"><div class="addto">加入购物车</div></a>
+	        	</form>
+	        </div>-->
+        </div>
+<!-------------------------------------------t-body结束--------------------------------->        
+        <div id="buttom">
+            <div class="butt">
+        		<div class="like">
+        			<h2>猜你喜欢</h2>
+        			<a href="#">换一批</a>
+        		</div>
+        		<div class="list">
+        			<div class="list01">
+        				<a href="#"><img src="http://image.maimaicn.com/img/20160624/1692915600686235_C"/></a>
+        				<p class="list-name">MARSHALL Kilburn马歇尔无线蓝牙复古音箱 黑色</p>
+        				<p class="list-price">￥3139</p>
+        			</div>
+        			<div class="list01">
+        				<a href="#"><img src="http://image.maimaicn.com/img/20160706/2732441052412056_C"/></a>
+        				<p class="list-name">意大利进口 百乐可（BALOCCO）碎巧克力饼干35</p>
+        				<p class="list-price">￥35</p>
+        			</div>
+        			<div class="list01">
+        				<a href="#"><img src="http://image.maimaicn.com/img/20161010/11032930253653514_C"/></a>
+        				<p class="list-name">日本 龙角散润喉糖100g</p>
+        				<p class="list-price">￥35</p>
+        			</div>
+        			<div class="list01">
+        				<a href="#"><img src="http://image.maimaicn.com/img/20161122/14729421399279977_C"/></a>
+        				<p class="list-name">惠氏婴儿润肤露100ml</p>
+        				<p class="list-price">￥29.9</p>
+        			</div>
+        			<div class="list01">
+        				<a href="#"><img src="http://image.maimaicn.com/img/20161124/14910615340652557_C"/></a>
+        				<p class="list-name">法国迪奥（Dior）全新真我纯香香水5ml</p>
+        				<p class="list-price">￥40</p>
+        			</div>
+        			<div class="list01">
+        				<a href="#"><img src="http://image.maimaicn.com/img/20161129/15349107817331256_C"/></a>
+        				<p class="list-name">超能植翠低泡洗衣液1.5kg+低泡洗衣液1kg</p>
+        				<p class="list-price">￥49</p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+<!----------------------------------------buttom结束------------------------------------>
+<div id="t-footer">
 	    	<div class="ind_1200">
 		    	<div class="footer_icon">
 		    		<div class="footer_icon_l">
@@ -863,9 +842,8 @@
 		    	</div>
 	    	</div>
 	    </div>
-<!----------------------------------------t-footer结束----------------------------------------------->   
-	    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	    
+<!-------------------------------------t-footer结束--------------------------------------->
+ <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	    <script type="text/javascript">	
 	    //鼠标放上.Ui_fir显示
 	        $(".fenl").mouseover(function(){
@@ -886,103 +864,61 @@
 	    	$(".ui-list-fir").mouseout(function(){
 				    $(".ui-list-two")[$(".ui-list-fir").index(this)].style.display = "none";	
 			});	
- 	
+			
+	        $("#option li").mouseover(function(){
+	          		$(this).css("background","red").siblings().css("background","#fff");
+	          		$(this).css("border-top","solid 1px #ccc").siblings().css("border-top",0);
+	          		$(this).css("border-bottom","solid 1px #ccc").siblings().css("border-bottom",0);
+	        })
+
+	      
 	    
-	      $(function(){
-	      	$.get("getShoppingCart.php",{"vipName":18291964533},function(data){
-	      		console.log(data);
-	      		data = eval(data);
-	      		var dian=document.getElementsByClassName("dian");
-	      		for(var i=0;i<data.length;i++){
+       </script>
+ 
+       <script type="text/javascript">
+       	$(function(){
+       		$.get("getGoodsList.php",function(data){
+//			console.log(data);
+			data = eval(data);
+//			//1找出[的下标 index 
+//			data.indexOf("[");
+//			//2截取从index开始到最后的字符串  dataStr
+//			var a = data.substring(data.indexOf("["))
+//			//3把dataStr里面的单引号 替换成双引号 newDataStr   解析的原因是因为单引号JSON.parse无法解析
+//			var b = a.replace(/\'/g,"\"");
+//			//4用JSON.parse进行解析
+//			console.log(JSON.parse(b));
+			var tp=document.getElementById("tp");
+				for(var i=0;i<4;i++){
 					var oDiv = document.createElement("div");
-					oDiv.innerHTML ='<div class="goods" style="width: 1200px;margin-top: 50px;height: 62px;border-bottom:solid 4px #eeeeee;font-size: 16px;line-height: 62px;padding-left: 80px;">诚志创业美妆店</div>'	
-			        +'<ul>'
-		        	+'	<li style="float: left;margin-left:80px;margin-top: -20px;"><a href="#"><img style="width: 80px;height: 80px;border: solid 1px silver;" src="'+data[i].goodsImg+'"/></a></li>'
-		        	+'	<li style="width: 367px;display: block;margin-left: 180px;margin-top: 50px;"><a href="#">'+data[i].goodsName+'</a></li>'
-		        	+'	<li style="float: left;margin-left: 430px;margin-top: -20px;">￥'+data[i].goodsPrice+'</li>'
-		        	+'	<li style="float: left;">'
-		        	+'		<div style="width: 110px;height: 32px;border: solid 1px silver;margin-left: 570px;margin-top:-30px;">'
-	    			+'		<input type="button" class="minus" value="-" style="border:none;width: 35px;height: 32px;float: left;"/>'
-					+'		<input type="text"  class="num" value="1"  style="text-align:center;border:none;width: 40px;height: 32px;float: left;"/>'
-					+'		<input type="button" class="plus" value="+"  style="border:none;width: 35px;height: 32px;float: left;"/>'
-        			+'	</div></li>'
-		        	+'    <li style="float: left;display: block;margin-left: 770px;margin-top: -20px;">￥'+data[i].goodsSubtotal+'</li>'
-			       +' </ul>'
-		        	+'<a href="#"><span style="float: right;display: block;margin-right: 70px;margin-top: -35px;color: #000;">删除</span></a><a href="#"><span style="color: #000;float: right;display: block;margin-right: 70px;margin-top: -13px">收藏</span></a>' 
-					dian[0].appendChild(oDiv);
-				}
-	      	 var num = document.getElementsByClassName("num"); 	
-	         var plus = document.getElementsByClassName("plus"); 	
-	         var minus = document.getElementsByClassName("minus"); 	
-		//+
-		for(var i=0;i<num.length;i++){
-			plus[i].onclick = function(){
-				var index = $(plus).index(this);
-			var n = parseInt(num[index].value)
-		//	var n = parseInt(num.value);
-			if(n<199){
-				num[index].value = n+1;
-			}else{
-				plus.disabled = "disabled";
-				plus.style.cursor = "not-allowed";
-			}	
-		}
-		//-
-		minus[i].onclick = function(){
+					oDiv.innerHTML = "<div class='dress'  goodsId='"+data[i].goodsId+"' ><img class='q01' src='"+data[i].goodsImg+"' /><form><dl class='tb'><dt>"+data[i].goodsName+"</dt><dd><h2>¥"
+					+data[i].goodsPrice+"</h2><span>红包抵用19.31元</span></dd></dl><a href=''><div class='addto'>加入购物车</div></a></form></div>";
+					tp.appendChild(oDiv);
+				}	
+				$(".dress").mouseover(function(){
+       			$(this).css({"border":"solid 1px silver","box-shadow":"1px 1px 2px 1px silver"});
+       			$(this).find(".addto").css("display","block");
+     			 
+       		})
+				$(".dress").mouseout(function(){
+       			$(".dress").css({"border":"1px solid #fff","box-shadow":"none"});
+                $(this).find(".addto").css("display","none");
+       		})
+				$(".dress").click(function(){
+					window.location = "good.html?goodsId="+$(this).attr("goodsId");
+				}); 
+		});	
+		
+		
+		 
 			
-			var index = $(minus).index(this);
-			var n = parseInt(num[index].value)
-			if(n>1){
-				num[index].value = n-1;
-			}else{
-				minus.disabled = "disabled";
-				minus.style.cursor = "not-allowed";
-			}
-		}
-		//键盘松开
-		num[i].onkeyup = function(){
-			setTimeout(function(){
-			   var n = num.value;
-		       var n1 = n.replace(/\D/g,"")?n.replace(/\D/g,""):1;
-		       num.value = n1<200?n1:1;	
-			},500)
-		}
-		}
+       	});
+       
+       </script>
+       
 
-	      	})
-	      	      	})
-//	      	var dian=document.getElementsByClassName("dian");
-//	      		for(var i=0;i<4;i++){
-//					var oDiv = document.createElement("div");
-//					oDiv.innerHTML ='<div class="goods" style="width: 1200px;height: 62px;border-bottom:solid 4px #eeeeee;font-size: 16px;line-height: 62px;padding-left: 80px;">诚志创业美妆店</div>'	
-//			        +'<ul>'
-//		        	+'	<li style="float: left;margin-left:80px;margin-top: -20px;"><a href="#"><img style="width: 80px;height: 80px;border: solid 1px silver;" src="img/01.jpg"/></a></li>'
-//		        	+'	<li style="width: 367px;display: block;border: solid 1px cadetblue;margin-left: 180px;margin-top: 50px;"><a href="#">兰蔻清滢柔肤水(粉色)200ml 专柜</a></li>'
-//		        	+'	<li style="float: left;margin-left: 430px;margin-top: -20px;">￥373</li>'
-//		        	+'	<li style="float: left;">'
-//		        	+'		<div style="width: 110px;height: 32px;border: solid 1px silver;margin-left: 570px;margin-top:-30px;">'
-//	    			+'		<input type="button" value="-" style="border:none;width: 35px;height: 32px;float: left;"/>'
-//					+'		<input type="text" value="1"  style="text-align:center;border:none;width: 40px;height: 32px;float: left;"/>'
-//					+'		<input type="button" value="+"  style="border:none;width: 35px;height: 32px;float: left;"/>'
-//      			+'	</div></li>'
-//		        	+'    <li style="float: left;display: block;margin-left: 770px;margin-top: -20px;">￥373</li>'
-//			       +' </ul>'
-//		        	+'<a href="#"><span style="float: right;display: block;margin-right: 70px;margin-top: -35px;color: #000;">删除</span></a><a href="#"><span style="color: #000;float: right;display: block;margin-right: 70px;margin-top: -13px">收藏</span></a>' 
-//					dian[0].appendChild(oDiv);
-//				}
-	  
 
-	    
-	    
-	    
-			
-	    	
-        </script>
+
 	</body>
 </html>
-	
-	
-	
-	
-	
-	
+

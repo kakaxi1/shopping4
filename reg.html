@@ -42,16 +42,16 @@
 	                    <p class="err-warning" id="err-warning"></p>
 	                    <div class="phone-box">
 	                        <input type="tel" class="tel-box" maxlength="11" placeholder="请输入手机号码">
-	                        <i class="err-warning-i"></i>
+	                        <i id="err-warning-i"></i>
 	                    </div>
 	                    <div class="img-vcode">
 	                        <input id="vf-img" type="text" maxlength="4" placeholder="请输入图形验证码">
-	                        <div class="vf-code"><img id="get-img" src="" alt=""></div>
-	                        <i class="err-warning-i"></i>
+	                        <div class="vf-code"><span id="get-img">7462</span></div>
+	                        <i class="err-warning-i imgCode"></i>
 	                    </div>
 	                    <div class="phone-vcode">
-	                        <input id="vf-phone" type="text" maxlength="6" placeholder="请输入短信验证码">
-	                        <div class="get-phonevc" id="get-phonevc">获取验证码</div>
+	                        <input id="vf-phone" type="text" maxlength="6" placeholder="请输入密码">
+	                       <!-- <div class="get-phonevc" id="get-phonevc">获取验证码</div>-->
 	                        <i class="err-warning-i"></i>
 	                    </div>
 	                    <div class="agreement clearfix">
@@ -362,3 +362,80 @@
 	</body>
 </html>
 
+<script>
+		    var txt=document.getElementById("vf-img");
+		    var send=document.getElementById("send-btn");
+			var _code=document.getElementById("get-img");
+			var phonevc=document.getElementById("get-phonevc");
+			var warning=document.getElementById("err-warning-i");
+			_code.onclick = function(){
+			var arrCode = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F","G","H","I",
+				"J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+			var oLen = arrCode.length;
+			var res = "";
+			for(var i=0;i<4;i++){
+				res+=arrCode[parseInt(Math.random()*oLen)];
+			}
+			_code.innerHTML = res;
+		}
+			
+			 txt.onblur= function(){
+				var oTxt=txt.value.toUpperCase();
+				if(oTxt==_code.innerHTML){
+					err.innerHTML="请输入密码";
+					warningImgCode.style.display = "none";
+					warning.style.display = "none";
+//					var time = 120;
+//					
+//					setInterval(function(){
+//						time--;
+//						phonevc.innerHTML=time+"s";
+//					},1000)
+				}else{
+					err.innerHTML="请获取图片验证码";
+					warningImgCode.style.display = "block";
+				}
+			}
+//			send.onclick = function(){
+//				if(tel.value!=""&&txt.value!=""){
+//					window.location = "login.html";
+//				}
+//				
+//			}
+
+		</script>
+		
+       <script type="text/javascript">
+       	var tel=document.getElementsByClassName("tel-box")[0];
+       	var err=document.getElementsByClassName("err-warning")[0];
+       	var warning=document.getElementById("err-warning-i");
+       	var warningImgCode = document.getElementsByClassName("imgCode")[0];
+       	tel.onblur=function(){
+				var reg=/\d{11}/;
+				err.innerHTML="";
+				warning.style.display = "none";
+				if(!reg.test(tel.value)){
+				   err.innerHTML="请输入正确的手机号";
+				   warning.style.display = "block";
+				}
+			}
+       	
+       </script>
+       <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+       <script type="text/javascript">
+       		$(function(){
+				$("#send-btn").click(function(){
+					
+					$.post("add.php",{"tel":$(".tel-box").val(),"pass":$("#vf-phone").val()},function(data){
+						console.log(data);
+						err.innerHTML="";
+						if(data.indexOf("1")>-1){
+						    window.location="login.html";
+						}else{
+							err.innerHTML="注册失败";
+						}
+					});
+				});
+			});
+       	
+       </script>

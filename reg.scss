@@ -5,7 +5,9 @@
     box-sizing: border-box;
     position: absolute
 }
-
+input{
+    outline: 0;
+}
 
 .w {
     width: 1200px;
@@ -21,7 +23,8 @@ input {
     line-height: 46px;
     width: 272px;
     font-size: 14px;
-    color: #333
+    color: #333;
+   
 }
 .login-header img {
     margin-top: 32px;
@@ -104,9 +107,20 @@ input {
                 display: block;
                 left: 0px;
                 border: none;
-                width: 318px;
+                width: 272px;
         }
     }
+}
+
+.w .login-box .err-warning {
+    width: 320px;
+    height: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #b61e28;
+    position: absolute;
+    top: 62px;
+    left: 30px;
 }
 #lg{
     top: 65px;
@@ -152,13 +166,45 @@ input {
 .pw .err-warning-i {
     width: 16px;
     height: 16px;
-    display: none;
+    display: block;z-index: 999999;
+    background: url(../img/icon.png) -117px 0 no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -8px;
+
+}
+#err-warning-i {
+    width: 16px;
+    height: 16px;
+    display: none; 
     background: url(../img/icon.png) -117px 0 no-repeat;
     position: absolute;
     top: 50%;
     right: 10px;
     margin-top: -8px;
 }
+
+//#code{
+//             
+//              font-size:30px;
+//              font-weight:bold;
+//              text-align:center;
+//              line-height:40px;
+//          }
+
+#get-img{
+    display: block;
+    font-weight:bold;
+    height: 30px;
+    font-size:20px;
+    color:red;
+    text-align:center;
+    line-height:30px;
+}
+    
+
+
 .agreement,
 .img-vcode,
 .phone-box,

@@ -117,6 +117,16 @@ a{
         border-radius: 4px;
         background-color: rgba(251, 253, 255, .8);
         filter: alpha(opacity=80);
+        .err-warning {
+            width: 320px;display: block;
+            height: 18px;
+            text-align: center;
+            font-size: 14px;
+            color: #b61e28;
+            position: absolute;
+            top: 62px;
+            left: 30px;
+        }
         .login-title {
             font-size: 18px;
             font-weight: 400;
@@ -135,16 +145,16 @@ a{
                }  
             }
         }
-       .err-warning{
-            width: 100%;
-            height: 18px;
-            text-align: center;
-            font-size: 14px;
-            color: #b61e28;
-            position: absolute;
-            top: 66px;
-            left: 0;
-       } 
+//     .err-warning{
+//          width: 320px;
+//          height: 18px;
+//          text-align: center;
+//          font-size: 14px;
+//          color: #b61e28;
+//          position: absolute;
+//          top: 66px;
+//          left: 30px;
+//     } 
        .phone-box{
             margin-top: 30px;
             width: 318px;

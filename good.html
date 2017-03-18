@@ -746,14 +746,14 @@
         	<div class="introduce">
         		<div class="introduce-l">
         			<ul id="option">
-        				<li class="active"><a href="#"><img src="img/01.jpg" /></a></li>
+        				<li class="active"><a href="#"><img src="img/01.jpg"/></a></li>
         				<li><a href="#"><img src="img/02.jpg" /></a></li>
         				<li><a href="#"><img src="img/03.jpg" /></a></li>
         			</ul>
         		</div>
         		<div class="introduce-m">
         			<ul id="list">
-        				<li class="active"><img src="img/01.jpg" /></li>
+        				<li class="active"><img src="img/01.jpg"/></li>
         				<li><img src="img/02.jpg" /></li>
         				<li><img src="img/03.jpg" /></li>
         			</ul>
@@ -779,7 +779,7 @@
         				<p><a href="#"><i class="add-car">加入购物车</i></a><a href="#"><i class="at-once">立即购买</i></a></p>
         			</div>
         			<div class="share">
-        				<div><span class="shares">分享</span><a href="#"><i class="wb"></i></a><i class="wx"></i><a href="#"><i class="kj"></i></a><a href="#"><span class="collect">收藏</span></a><a href="#"><span class="sc"></span></a></div>
+        				<div><span class="shares">分享</span><a href="#"><i class="wb"></i></a><a href="#"><i class="wx"></i></a><a href="#"><i class="kj"></i></a><a href="#"><span class="collect">收藏</span></a><a href="#"><span class="sc"></span></a></div>
         			</div>
         		</div>
         	</div>
@@ -788,10 +788,10 @@
         	<div class="mat">
         		<div class="matter-l">
         			<ul>
-        				<a href="#"></a><li><img src="img/04.jpg"/></li></a>
-        				<a href="#"></a><li><img src="img/05.jpg"/></li></a>
-        				<a href="#"></a><li><img src="img/06.jpg"/></li></a>
-        				<a href="#"></a><li><img src="img/07.gif"/></li></a>
+        				<a href="#"><li><img src="img/04.jpg"/></li></a>
+        				<a href="#"><li><img src="img/05.jpg"/></li></a>
+        				<a href="#"><li><img src="img/06.jpg"/></li></a>
+        				<a href="#"><li><img src="img/07.gif"/></li></a>
         			</ul>
         		</div>
         		<div class="matter-r">
@@ -889,6 +889,40 @@
 <!-------------------------------------t-footer结束--------------------------------------->
  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	    <script type="text/javascript">	
+	   
+	    $(function(){
+	    	 var goodsId = location.href;
+//	    	 console.log(goodsId);
+		    goodsId=goodsId.substring(goodsId.indexOf("goodsId="));
+		   
+		    goodsId=goodsId.substring(goodsId.indexOf("=")+1);
+//		     console.log(goodsId);
+		    $.get("getGoodsInfo.php",{'goodsId':goodsId},function(data){
+		    	data=eval("("+data+")");
+		    		console.log(data);
+		    		$(".l-t h1").html(data.goodsName);
+		    		$("#list img").attr("src",data.goodsImg);
+		    		$(".jj #num").html(data.goodsCount);
+		    		$(".l-m .money").html(data.goodsPrice);
+		    })
+		    $(".add-car").click(function(){
+				 $.get("addShoppingCart.php",{"vipName":18291964533,"goodsId":goodsId,"goodsCount":$(".jj").find("#num").val()},function(data){
+				 	console.log(data);
+				 	if(data.indexOf("1")>-1){
+				 		 window.location = "shopCar.html";
+				 	}
+				 	
+				 })
+				 
+				}); 
+		    
+		    
+	    })
+	    
+	    
+	    
+	    
+	    
 	    //鼠标放上.Ui_fir显示
 	        $(".fenl").mouseover(function(){
 	        	$(".Ui_fir").css("display","block");
@@ -902,13 +936,20 @@
 	    //鼠标放在.ui-list-fir上.ui-list-two显示     
 	        $(".ui-list-fir").mouseover(function(){
 				    $(".ui-list-two")[$(".ui-list-fir").index(this)].style.display = "block";	
-				    $(".ui-list-two").not[$(".ui-list-fir").index(this)].style.display = "none";
+				    $(".ui-list-two").not($(".ui-list-fir").index(this))[0].style.display = "none";
 			});
 		 //鼠标离开.ui-list-fir上.ui-list-two隐藏    
 	    	$(".ui-list-fir").mouseout(function(){
 				    $(".ui-list-two")[$(".ui-list-fir").index(this)].style.display = "none";	
 			});	
-	          	
+			
+	        $("#option li").mouseover(function(){
+	          		$(this).css("background","red").siblings().css("background","#fff");
+	          		$(this).css("border-top","solid 1px #ccc").siblings().css("border-top",0);
+	          		$(this).css("border-bottom","solid 1px #ccc").siblings().css("border-bottom",0);
+	        })
+
+	      
 	    
         </script>
         <!--<script type="text/javascript">
@@ -927,8 +968,6 @@
 	//	选项卡
 		var oLi1 = document.getElementById("option").getElementsByTagName("li");
 		var oLi2 = document.getElementById("list").getElementsByTagName("li");
-		var oLi3 = document.getElementById("list").getElementsByTagName("img");
-	//	console.log(oLi1);
 		for(var i=0;i<oLi1.length;i++){
 	//		console.log(i);
 			oLi1[i].index = i;  // 存储索引值i 
@@ -936,14 +975,10 @@
 				console.log(this.index);	// 索引值的使用this.index		
 				for(var j=0;j<oLi1.length;j++){
 					oLi1[j].className = "";
-//					oLi3[j].style.display = "none";
 					oLi2[j].style.display = "none";
 				}
 				this.className = "active";
-//				oLi3[this.index].style.display = "block";
 				oLi2[this.index].style.display = "block";
-				
-				
 			}
 		}
 </script>
@@ -978,6 +1013,13 @@
 		       num.value = n1<200?n1:1;	
 			},500)
 		}
+		
+		
+		$(function(){
+			console.log(location.href);
+			  
+		
+		})
 	</script>
 
 	</body>

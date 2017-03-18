@@ -1,0 +1,74 @@
+#t-header{
+    background: #fff;
+}
+#sousuo{
+    width: 1200px;
+    height: 40px;
+    margin: 20px auto;
+    line-height: 40px;
+    background: #fff;
+    text-indent: 20px;
+}
+#tp{
+    background: #fff;
+    height: 600px;
+    width: 1200px;
+    margin: 20px auto;
+    .dress{
+        margin-right:2px;   
+        width: 220px;
+        height: 344px;
+        float: left;
+//      box-shadow: 2px 3px 5px 3px silver;
+        border:1px solid #fff;
+        .q01{
+            width: 182px;
+            height: 181px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .tb{
+            width: 182px;
+            height: 90px;
+            display:block;
+            
+            border-top: solid 1px silver;
+            margin-left: 20px;
+            margin-top: 30px;
+            line-height: 20px;
+            dt{
+                width: 182px;
+                height: 40px;
+                font-size: 16px;
+                overflow: hidden;
+                margin-top: 20px;
+            }
+            dd{
+               h2{
+                   color: red;
+                   float: left;
+               }
+               span{
+                   float: left;
+                   color: red;
+                   margin-top: 3px;
+                   margin-left: 8px;
+               }
+            }
+        }
+        a{
+            .addto{
+                display:none;
+                width: 100%;
+                height: 32px;
+                text-align:center;
+                line-height:32px;
+                color:#fff;
+                font-size:16px;
+                background: red;
+            }
+        }
+    
+    }
+ 
+}

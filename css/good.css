@@ -25,15 +25,12 @@ body {
       top: 20px; }
       #bodys .introduce .introduce-l #option li {
         width: 94px;
-        height: 94px;
-        background: red;
-        border-top: solid 1px #ccc; }
+        height: 94px; }
         #bodys .introduce .introduce-l #option li img {
           display: block;
           width: 100%;
           height: 100%;
-          border-radius: 10px;
-          border-bottom: solid 1px #ccc; }
+          border-radius: 10px; }
       #bodys .introduce .introduce-l #option .active {
         display: block; }
     #bodys .introduce .introduce-m {
